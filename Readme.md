@@ -1,8 +1,8 @@
 🖥️Technologies used in the project🖥️:
 
-Operating System 💻:
-Windows
-Linux
+Operating System 💻:<br>
+Windows<br>
+Linux<br>
 
 Front End 📱:
 
@@ -28,6 +28,7 @@ Database 🗃️:
  )
 
 Connect with us 🔗💕:
+<br>
 [@Sanskruti Joshi]()
 [![Github](https://img.shields.io/badge/github-100000?style=for-the-badge&logo=GitHub&logoColor=white&labelColor=black&color=black')](https://github.com/Woman-in-STEM)
 
