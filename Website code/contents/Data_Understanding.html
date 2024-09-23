@@ -1,0 +1,86 @@
+<html>
+<head>
+	<link rel="stylesheet" href="Data_Understanding.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Data Understanding</title>
+<body>
+	<div class="menu">
+            <ul> 
+                <li ><a href="../Home.html" class="passive">Home</a></li>
+                <li ><a href="Introduction.html" class="passive">Introduction</a></li>
+                <li ><a href="Data_Discovery.html" class="passive">Data Discovery</a></li>
+                <li ><a href="#" class="passive" style="color: #F8D040">Data Understanding</a></li>
+                <li ><a href="Data_Preparation.html" class="med">Data Preparation</a></li>
+                <li ><a href="EDA.html" class="med">Exploratory Data Analysis</a></li>
+                <li ><a href="Data_Modeling.html" class="med">Data Modeling</a></li>
+                <li ><a href="Evaluation.html" class="med">Model Evaluation</a></li>
+                <li ><a href="Comparison.html" class="active">Model Comparison</a></li>
+                <li ><a href="Conclusion.html" class="active">Conclusion</a></li>
+                <li ><a href="Improvement.html" class="active">Scope for Improvement</a></li>
+                <li ><a href="Bibliography.html" class="active">Bibliography</a></li>
+            </ul>
+    </div>
+	<div class="menu1">
+		<ul>
+			<li><a href="AboutUs.html" class="btn-aboutus"><span> About Us</span></a></li>            
+		</ul><br>
+	</div>
+    <div>    	
+    	<h1 style="color:indigo; margin-top: 30px;"><center>DATA UNDERSTANDING</center></h1><br>
+    	<div class="container">
+    		<br>
+    		<h1 style="color:purple;">Dataset attributes</h1>
+    		<hr style="color:magenta;border-width:3px;">
+    		<button id="first">This column shows whether the account has a profile picture or not (0 for “no profile pic”, 1 for “profile pic”).</button><br>
+    		<button id="second">This column shows the ratio of the number of numeric characters in the username to its length.</button><br>
+    		<button id="third">This depicts the number of words in the full name of the account.</button><br>
+    		<button id="fourth">This column shows the ratio of the number of numeric characters in the fullname to its length.</button><br>
+    		<button id="fifth">This shows whether the username is the same as the full name registered by an account (0 for “not same” , 1 for “same”).</button><br>
+    		<button id="sixth">This column shows the number of characters written in the bio section of an account.</button><br>
+    		<button id="seventh">It shows whether the account has any external URL in bio (0 for “no external URl”, 1 for “has external URL”).</button><br>
+    		<button id="eighth">Shows whether the account is private or not (0 for false, 1 for true).</button><br>
+    		<button id="ninth">It depicts the number of publications like images, videos etc posted by the account.</button><br>
+    		<button id="tenth">It shows the number of profiles following the account.</button><br>
+    		<button id="eleventh">It shows the number of profiles the account follows.</button><br>
+    		<button id="twelfth">This is our target variable which shows whether the account is fake or not (0 for “not fake”, 1 for “fake”).</button><br><br>
+    	</div>
+    </div>
+    <hr style="color:magenta;border-width:3px;margin-top:1000px;">
+    <div class="container">
+    	<div class="row">
+    		<div class="col-6">    			
+    			<br>
+    			<div class="flip-card">
+  					<div class="flip-card-inner">
+    					<div class="flip-card-front">
+     		 				<h1>Basic information about dataset</h1>
+      						<p>Sample of train dataset is shown for effciency</p>
+    					</div>
+    					<div class="flip-card-back">
+      						<img src="Images/info.png" style="width:300px;height:300px;">
+    					</div>
+  					</div>
+				</div>
+    		</div>
+    		<div class="col-6">    			
+    			<br>
+    			<div class="flip-card">
+  					<div class="flip-card-inner">
+    					<div class="flip-card-front">
+     		 				<h1>Number of records in datasets</h1>
+      						<p>Upper half shows the amount of rows for train dataset</p>
+      						<p>Lower half shows the same for test dataset</p>
+    					</div>
+    					<div class="flip-card-back">
+      						<img src="Images/count.png" style="width:300px;height:300px;">
+    					</div>
+  					</div>
+				</div>
+    		</div>
+    	</div>
+    </div><br><br>
+	<div class="header">
+		<p class="main">Copyright © 2024. All Rights Reserved</p>
+	</div>	
+</body>
+</html>

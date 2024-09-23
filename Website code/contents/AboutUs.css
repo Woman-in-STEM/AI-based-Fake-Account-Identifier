@@ -1,0 +1,469 @@
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+
+}
+
+body{
+
+    background: #4A2F52;
+
+}
+
+/*----------------------------------------------------- Main Navbar-------------------------------------------------------- */
+
+.container{
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+.menu{
+
+    background:linear-gradient(45deg, #d82f87, #2a1b3d, #44318D, #501d18, #024553);
+
+}
+
+.menu ul{
+
+    display: inline-flex;
+
+    padding: 10px;
+
+}
+
+.menu ul li a{
+
+    text-decoration: none;
+
+    color: white;
+
+}
+
+.menu ul li{
+
+    list-style-type: none;
+
+    margin: 0 6px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    position: relative;
+
+}
+
+.menu ul li::after{
+
+    content: '';
+
+    height: 3px;
+
+    width: 100%;
+
+    background: radial-gradient(#8904DC, #F72B9E, #F8D040);
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -9px;
+
+    opacity: 0;
+
+    transition: all 0.2s;
+
+    pointer-events: none;
+
+}
+
+.menu ul .active:hover{
+
+    color: #8904DC;
+
+}
+
+.menu ul .passive:hover{
+
+    color: #F8D040;
+
+}
+
+.menu ul .med:hover{
+
+    color: #F72B9E;
+
+}
+
+.menu ul li:hover::after{
+
+    opacity: 1;
+
+}
+
+.menu1{
+
+    margin-top: 20px;
+
+    padding-left: 50%;
+
+}
+
+.menu1 ul li{
+
+    list-style-type: none;
+
+    margin: 0 10px;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+.btn-aboutus{
+
+    position: absolute;
+
+    text-decoration: none;
+
+    color: white;
+
+    border: 2px solid transparent;
+
+    border-radius: 10px;
+
+    background-image: linear-gradient(#4A2F52, #4A2F52), radial-gradient(circle at top left, #8904DC, #F72B9E, #F8D040);
+
+    background-origin: border-box;
+
+    background-clip: content-box, border-box;
+
+}
+
+.btn-aboutus span{
+
+    display: block;
+
+    padding: 8px 22px;
+
+}
+
+/* ------------------------------------------------details-------------------------------------------------------- */
+
+.container1{
+
+    display: flex;
+
+}
+
+.container2{
+
+    width: 950px;
+
+    height: 650px;
+
+    display: flex;
+
+    margin-top: 90px;
+
+    margin-left: 30px;
+
+    border-radius: 10px;
+
+    background: white;
+
+}
+
+.content{
+
+    display: block;
+
+    margin-left: 90px;
+
+    margin-top: 20px;
+
+    padding: 10px;
+
+    width: 120px;
+
+    height: 120px;
+
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px black;
+
+}
+
+.text, .text1{
+
+    font-size: 25px;
+
+    width: 900px;
+
+    height: 400px;
+
+    padding-top: 40px;
+
+}
+
+.text{
+
+    color: rgb(247, 61, 61);
+
+}
+
+.text1{
+
+    color: rgb(57, 216, 248);
+
+}
+
+.text label,.text1 label{
+
+    color: orange;
+
+}
+
+.btn{
+
+    position: absolute;
+
+    text-decoration: none;
+
+    color: black;
+
+    border: 2px solid transparent;
+
+    border-radius: 10px;
+
+    background-image: linear-gradient(#faf6fb, #faf6fb), radial-gradient(circle at top left, #8904DC, #F72B9E, #F8D040);
+
+    background-origin: border-box;
+
+    background-clip: content-box, border-box;
+
+}
+
+.btn span{
+
+    display: block;
+
+    padding: 8px 22px;
+
+}
+
+.btn:hover{
+
+    box-shadow: 0 0 10px black;
+
+}
+
+/* --------------------------------------------------social media icon----------------------------------------------------------- */
+
+.social-icons{
+
+  display: flex;
+
+  text-align: center;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-left: 190px;
+
+  margin-top: 30px;
+
+}
+
+.social-icons ul{
+
+  display: flex;
+
+}
+
+.social-icons ul a{
+
+  position: relative;
+
+  display: block;
+
+  color: #fff;
+
+  font-size: 30px;
+
+  height: 60px;
+
+  width: 60px;
+
+  background: black;
+
+  line-height: 60px;
+
+  border-radius: 50%;
+
+  margin: 0 15px;
+
+  cursor: pointer;
+
+  transition: .5s;
+
+}
+
+.social-icons ul a:before{
+
+  position: absolute;
+
+  content: '';
+
+  top: 0;
+
+  left: 0;
+
+  height: inherit;
+
+  width: inherit;
+
+  border-radius: 50%;
+
+  transform: scale(.9);
+
+  z-index: -1;
+
+  transition: .5s;
+
+}
+
+.social-icons ul a:nth-child(1):before{
+
+  background: #343a40;
+
+}
+
+.social-icons ul a:nth-child(3):before{
+
+  background: #1DA1F2;
+
+}
+
+.social-icons ul a:nth-child(2):before{
+
+  background: #E1306C;
+
+}
+
+.social-icons ul a:nth-child(4):before{
+
+  background: #149414;
+
+}
+
+.social-icons ul a:hover:before{
+
+  filter: blur(3px);
+
+  transform: scale(1.2);
+
+}
+
+.social-icons ul a:nth-child(1):hover:before{
+
+  box-shadow: 0 0 15px #343a40;
+
+}
+
+.social-icons ul a:nth-child(3):hover:before{
+
+  box-shadow: 0 0 15px #1DA1F2;
+
+}
+
+.social-icons ul a:nth-child(2):hover:before{
+
+  box-shadow: 0 0 15px #E1306C;
+
+}
+
+.social-icons ul a:nth-child(4):hover:before{
+
+  box-shadow: 0 0 15px #149414;
+
+}
+
+.social-icons ul a:nth-child(1):hover{
+
+  color: #555555;
+
+  box-shadow: 0 0 15px #343a40;
+
+  text-shadow: 0 0 15px #343a40;
+
+}
+
+.social-icons ul a:nth-child(3):hover{
+
+  color: #26a4f2;
+
+  box-shadow: 0 0 15px #1DA1F2;
+
+  text-shadow: 0 0 15px #1DA1F2;
+
+}
+
+.social-icons ul a:nth-child(2):hover{
+
+  color: #e23670;
+
+  box-shadow: 0 0 15px #E1306C;
+
+  text-shadow: 0 0 15px #E1306C;
+
+}
+
+.social-icons ul a:nth-child(4):hover{
+
+  color: #0c8e0c;
+
+  box-shadow: 0 0 15px #149414;
+
+  text-shadow: 0 0 15px #149414;
+
+}
+
+.header{
+
+  width: 100%;
+
+  height: 50px;
+
+  background: black;
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 30px;
+
+}
+
+.main{
+
+  padding: 10px 20px;
+
+  color: white;
+
+  font-size: 26px;
+
+}

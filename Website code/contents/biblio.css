@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: white;
+}
+/*----------------------------------------------------- Main Navbar-------------------------------------------------------- */
+.container{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    background:linear-gradient(45deg, #d82f87, #2a1b3d, #44318D, #501d18, #024553);
+}
+.menu ul{
+    display: inline-flex;
+    padding: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu ul li{
+    list-style-type: none;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+}
+.menu ul li::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: radial-gradient(#8904DC, #F72B9E, #F8D040);
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+.menu ul .active:hover{
+    color: #8904DC;
+}
+.menu ul .passive:hover{
+    color: #F8D040;
+}
+.menu ul .med:hover{
+    color: #F72B9E;
+}
+.menu ul li:hover::after{
+    opacity: 1;
+}
+.menu1{
+    margin-top: 20px;
+    padding-left: 50%;
+}
+.menu1 ul li{
+    list-style-type: none;
+    margin: 0 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-aboutus{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(#4A2F52, #4A2F52), radial-gradient(circle at top left, #8904DC, #F72B9E, #F8D040);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.btn-aboutus span{
+    display: block;
+    padding: 8px 22px;
+}
+/* ------------------------ */
+.container1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.container1 h3{
+    margin-top: 30px;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 30px;
+}
+.container1 a{
+    text-decoration: none;
+    color: purple;
+}
+.container1 h3::before,.container1 h3::after{
+    content: "\2605";
+    font-size: 35px;
+    animation: star-blink 1.2s infinite;
+    transition: color 0.2s ease-in-out;
+}
+@keyframes star-blink{
+    0%, 100%{color: black;}
+    20%{color: black;}
+    75%{color: white;}
+}
+.container1 a:hover{
+    text-decoration: underline;
+    color: black;
+}
+/* -------------------------------- */
+.container2{
+    margin: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.container2 div h3::before,.container2 div h3::after{
+    content: "🟔";
+    font-size: 35px;
+    animation: star1-blink 1.9s infinite;
+    transition: color 0.7s ease-in-out;
+}
+@keyframes star1-blink{
+    0%, 100%{color: black;}
+    20%{color: black;}
+    75%{color: white;}
+}
+.container2 div a{
+    text-decoration: none;
+    font-size: 30px;
+    color: crimson;
+}
+.container2 div a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    padding: 10px 20px;
+    color: white;
+    font-size: 26px;
+}

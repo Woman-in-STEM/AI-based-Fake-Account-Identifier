@@ -1,0 +1,150 @@
+<html>
+<head>
+	<link rel="stylesheet" href="Evaluation.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Model evaluation</title>
+<body style="background-color: black;color:white;">
+	<div class="menu">
+            <ul> 
+                <li ><a href="../Home.html" class="passive">Home</a></li>
+                <li ><a href="Introduction.html" class="passive">Introduction</a></li>
+                <li ><a href="Data_Discovery.html" class="passive">Data Discovery</a></li>
+                <li ><a href="Data_Understanding.html" class="passive">Data Understanding</a></li>
+                <li ><a href="Data_Preparation.html" class="med">Data Preparation</a></li>
+                <li ><a href="EDA.html" class="med">Exploratory Data Analysis</a></li>
+                <li ><a href="Data_Modeling.html" class="med">Data Modeling</a></li>
+                <li ><a href="#" class="med" style="color: #F8D040">Model Evaluation</a></li>
+                <li ><a href="Comparison.html" class="active">Model Comparison</a></li>
+                <li ><a href="Conclusion.html" class="active">Conclusion</a></li>
+                <li ><a href="Improvement.html" class="active">Scope for Improvement</a></li>
+                <li ><a href="Bibliography.html" class="active">Bibliography</a></li>
+            </ul>
+    </div>
+    <div class="menu1">
+            <ul>
+                <li><a href="AboutUs.html" class="btn-aboutus"><span> About Us</span></a></li>            
+            </ul><br><br>
+        </div>
+        <div style="margin:60px;">
+    <h1><center style="color:mistyrose;margin-top: 15px; font-family: fantasy;">MODEL EVALUATION</center></h1>
+    <hr style="border-width: 5px; color:navajowhite;"><br>    
+    <img src="svg/evaluation.svg" width="600px" height="600px" style="margin-left: 300px;">
+    <br><br>
+    <h3 style="color: lightyellow; font-family: serif;">About</h3>
+    <hr style="border-width: 3px; color:navajowhite;"> 
+    <p><b style="color:bisque; font-family: sans-serif;">Confusion matrix:</b><br>A confusion matrix is a matrix that summarizes the performance of a machine learning model on a set of test data.<br>The matrix is divided into two dimensions, that are predicted values and actual values along with the total number of predictions.<br>Following are the specifications of classification report:<br>
+        <ul>
+            <li><i>True Positives (TP):</i> When the actual value is Positive and predicted is also Positive</li>
+            <li><i>True negatives (TN):</i> When the actual value is Negative and prediction is also Negative.</li>
+            <li><i>False positives (FP):</i> When the actual is negative but prediction is positive. Also called the Type 1 error. </li>
+            <li><i>False negatives (FN):</i> When the actual is Positive but  prediction is Negative. Also called the Type 2 error.</li>
+        </ul>
+    </p> 
+    <br>
+    <p><b style="color:bisque; font-family: sans-serif;">Classification report:</b><br>A classification report provides a comprehensive summary of the performance metrics for a machine learning model.<br>It includes key metrics such as:<br><ul>
+    <li><i>Precision:</i> Measures the proportion of true positive predictions (correctly predicted instances) out of all positive predictions (both true positives and false positives). High precision indicates fewer false positives.</li> 
+    <li><i>Recall (Sensitivity):</i> Measures the proportion of true positive predictions out of all actual positive instances. High recall indicates fewer false negatives.</li>
+    <li><i>F1-score:</i> The harmonic mean of precision and recall. It balances both metrics and is useful when the class distribution is imbalanced.</li>
+    <li><i>Support:</i> The number of instances in each class.</li>
+    </ul>
+    </p>
+    <br><br>
+    <h3 style="color: lightyellow; font-family: serif;">Algorithm metrics</h3>
+    <hr style="border-width: 3px; color:navajowhite;">
+</div>
+    <div class="container" style="margin:50px;">
+        <div class="row">
+            <div class="col-3">
+                <h6 style="font-size: 20pt;">ALGORITHM</h6>
+            </div>
+            <div class="col-3">
+                <h6 style="font-size: 20pt;">CONFUSION MATRIX</h6>
+            </div>
+            <div class="col-3">
+                <h6 style="font-size: 20pt;">CLASSIFICATION REPORT</h6>
+            </div>
+            <div class="col-3">
+                <h6 style="font-size: 20pt;">ACCURACY SCORE</h6>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-3">
+                <p>Random Forest Algorithm</p>
+            </div>
+            <div class="col-3">
+                <img src="Images/firstcf.png" style="width:250px;height:250px;">
+            </div>
+            <div class="col-3">
+                <img src="Images/firstcr.png" style="width:250px;height:250px;">
+            </div>
+            <div class="col-3">
+                <img src="Images/firstas.png" style="width:250px;height:250px;">
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-3">
+                <p>Linear SVC</p>
+            </div>
+            <div class="col-3">
+                <img src="Images/secondcf.png" style="width:250px;height:250px;">
+            </div>
+            <div class="col-3">
+                <img src="Images/secondcr.png" style="width:250px;height:250px;">
+            </div>
+            <div class="col-3">
+                <img src="Images/secondas.png" style="width:250px;height:250px;">
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-3">
+                <p>K-Neighbours Algorithm</p>
+            </div>
+            <div class="col-3">
+                <img src="Images/thirdcf.png" style="width:250px;height:250px;">
+            </div>
+            <div class="col-3">
+                <img src="Images/thirdcr.png" style="width:250px;height:250px;">
+            </div>
+            <div class="col-3">
+                <img src="Images/thirdar.png" style="width:250px;height:250px;">
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-3">
+                <p>Decision Trees</p>
+            </div>
+            <div class="col-3">
+                <img src="Images/fourthcf.png" style="width:250px;height:250px;">
+            </div>
+            <div class="col-3">
+                <img src="Images/fourthcr.png" style="width:250px;height:250px;">
+            </div>
+            <div class="col-3">
+                <img src="Images/fourthas.png" style="width:250px;height:250px;">
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-3">
+                <p>XG Boost</p>
+            </div>
+            <div class="col-3">
+                <img src="Images/fifthcf.png" style="width:250px;height:250px;">
+            </div>
+            <div class="col-3">
+                <img src="Images/fifthcr.png" style="width:250px;height:250px;">
+            </div>
+            <div class="col-3">
+                <img src="Images/fifthas.png" style="width:250px;height:250px;">
+            </div>
+        </div>
+    </div>
+    <div class="header">
+		<p class="main">Copyright © 2024. All Rights Reserved</p>
+	</div>	
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Comparison.css">
+    <title>Model Comparison</title>
+</head>
+<body>
+<!-----------------------------------------Main navbar----------------------------------------------->
+<div class="container">
+    <div class="menu">
+        <ul> 
+            <li ><a href="../Home.html" class="passive">Home</a></li>
+            <li ><a href="Introduction.html" class="passive">Introduction</a></li>
+            <li ><a href="Data_Discovery.html" class="passive">Data Discovery</a></li>
+            <li ><a href="Data_Understanding.html" class="passive">Data Understanding</a></li>
+            <li ><a href="Data_Preparation.html" class="med">Data Preparation</a></li>
+            <li ><a href="EDA.html" class="med">Exploratory Data Analysis</a></li>
+            <li ><a href="Data_Modeling.html" class="med">Data Modeling</a></li>
+            <li ><a href="Evaluation.html" class="med">Model Evaluation</a></li>
+            <li ><a href="#" class="active" style="color: #F8D040">Model Comparision</a></li>
+            <li ><a href="Conclusion.html" class="active">Conclusion</a></li>
+            <li ><a href="Improvement.html" class="active">Scope for Improvement</a></li>
+            <li ><a href="Bibliography.html" class="active">Bibliography</a></li>
+        </ul>
+    </div>
+    <div class="menu1">
+        <ul>
+            <li><a href="AboutUs.html" class="btn-aboutus"><span> About Us</span></a></li>            
+        </ul>
+    </div>
+</div>
+<!--------------------------------------------Definition----------------------------------------------------->
+<div class="mssg">
+    <h1><short style="font-size: 50px;">Model Comparision </short><br><br>Comparing Machine Learning Algorithms (MLAs) are important to come out with the best-suited algorithm for a particular problem.he MLAs we have taken
+         up for comparison are <short style="color: rgb(86, 187, 221);">Random Forest classifier</short>, <short style="color: palevioletred;">K-nearest neighbor classifier</short>, 
+         <short style="color: red;">Decision Tree classifier</short>, <short style="color: green;">eXtreme Gradient Boosting (XGBoost)</short> and <short style="color: orange;">Linear Support Vector Machine (SVM)</short>.
+    </h1>
+    <img src="png/1 (1).png" width="600px" height="400px">
+</div>
+<!------------------------------------------------Steps Involved-------------------------------------------------------->
+<div class="container1">
+    <div class="top">
+        <div class="image">
+            <img src="svg/evalute.svg" width="600px" height="600px">
+        </div>
+        <div class="text">
+            <h1>Steps we used prior the comparison :</h1><br><br>
+            <h3>1. Firstly, we initialized a list of Machine Learning Algorithms we selected. <br><br>
+                2. Preprocessing, Exploratory Analysis, Evaluation of the data was previously done so we stored the results in a pandas Dataframe (MLA_compare). <br><br>
+                3. It sorts the results based on Accuracy in descending order and displays the comparison table (MLA_compare). <br><br>
+                </h3>
+        </div>
+    </div>
+    <div class="down">
+        <img src="Images/compare.png" width="100%" height="700">
+    </div>
+</div>
+<hr>
+<!------------------------------------------------------Details------------------------------------------------------------------>
+<div class="head"><h1>The following bar plots visualizes the attributes of classification report of different machine learning models. Each bar represents an algorithm labeled along the x-axis. The height of each bar indicates the report achieved by the models :</h1></div>
+<!-----------------------------------------------------------compare-------------------------------------------------------->
+<hr>
+<div class="head"><h3 style="font-size: 27px; color: white; padding-top: 30px;">Comparison of Machine Learning Algorithms on the basis of :</h3></div>
+<div class="container2">
+    <div class="photo">
+        <img src="Images/accuracy.png" width="720" height="460">
+    </div>
+    <div class="para">
+        <div style="display: flex; justify-content: space-around;">
+            <img src="Gifs/one.gif" width="70" height="70">
+            <h2> Accuracy </h2><br><br>
+        </div>
+        <h3 style="padding-top: 10px;">According to the above plot, we can interpret that the <short style="color: red;">Random Forest Classifier</short> gives better accuracy as compared to other algorithms. 
+            <short style="color: lightgreen;">Random Forest accuracy is 99.3%</short>, <short style="color: lightsalmon;">Decision Tree accuracy is 98.6%</short>, <short style="color: orchid;">XGBoost accuracy is 97.4%,</short> 
+            <short style="color: yellow;">K-Neighbor accuracy is 91.6%</short> & <short style="color: lightseagreen;">Linear SVC accuracy is 87.9%</short>.
+        </h3>
+    </div>
+</div>
+<div class="container2">
+    <div class="photo">
+        <img src="Images/precision.png" width="720" height="460">
+    </div>
+    <div class="para">
+        <div style="display: flex; justify-content: space-around;">
+            <img src="Gifs/two.gif" width="70" height="70">
+            <h2>Precision</h2><br><br>
+        </div>
+        <h3 style="padding-top: 10px;">From the above plot, we can interpret that the <short style="color: red;">Random Forest Classifier</short> gives better Precision as compared to other algorithms. 
+            <short style="color: lightgreen;">Random Forest Precision is 99%</short>, <short style="color: lightsalmon;">Decision Tree Precision is 98%</short>, <short style="color: orchid;">XGBoost Precision is 97%</short>, 
+            <short style="color: yellow;">K-Neighbor Precision is 91.06% </short>&<short style="color: lightseagreen;"> Linear SVC Precision is 95.79%</short>.
+        </h3>
+    </div>
+</div>
+<div class="container2">
+    <div class="photo">
+        <img src="Images/recall.png" width="720" height="460">
+    </div>
+    <div class="para">
+        <div style="display: flex; justify-content: space-around;">
+            <img src="Gifs/three.gif" width="70" height="70">
+            <h2>Recall</h2><br><br>
+        </div>
+        <h3 style="padding-top: 10px;">From the above plot, we can interpret that the <short style="color: red;">Random Forest Classifier</short> gives better Recall as compared to other algorithms. 
+            <short style="color: lightgreen;"></short>Random Forest Recall is 100%, <short style="color: lightsalmon;">Decision Tree Recall is 99%</short>, <short style="color: orchid;">XGBoost Recall is 100%,</short> 
+            <short style="color: yellow;">K-Neighbor Recall is 92.3% </short>&<short style="color: lightseagreen;"> Linear SVC Recall is 79.45%</short>.</h3>
+    </div>
+</div>
+<div class="container2">
+    <div class="photo">
+        <img src="Images/f1-score.png" width="720" height="460">
+    </div>
+    <div class="para">
+        <div style="display: flex; justify-content: space-around;">
+            <img src="Gifs/four.gif" width="70" height="70">
+            <h2>F1-Score</h2><br><br>
+        </div>
+        <h3 style="padding-top: 10px;">Above plot shows that the <short style="color: red;">XGBoost</short> gives better F1-score as compared to other algorithms. 
+            <short style="color: lightgreen;"></short>Random Forest F1-score is 99%, <short style="color: lightsalmon;">Decision Tree F1-score is 99%</short>, <short style="color: orchid;">XGBoost F1-score is 100%,</short>
+             <short style="color: yellow;">K-Neighbor F1-score is 91.6% </short>&<short style="color: lightseagreen;"> Linear SVC F1-score is 86.54%</short>.
+        </h3>
+    </div>
+</div>
+<div class="container2">
+    <div class="photo">
+        <img src="Images/ROC.png" width="720" height="460">
+    </div>
+    <div class="para">
+        <div style="display: flex; justify-content: space-around;">
+            <img src="Gifs/five.gif" width="70" height="70">
+            <h2>Receiver Operating Characteristics(ROC)</h2><br><br>
+        </div>
+        <h3 style="padding-top: 10px;">The area under the ROC curve is often called AUC and it is also a good measure of the predictability of the machine learning algorithms.
+            <short style="color: chartreuse;"> A higher AUC is an indication of more accurate prediction.</short>
+        </h3>
+    </div>
+</div><br><br>
+<div class="header">
+    <p class="main">Copyright © 2024. All Rights Reserved</p>
+</div>	
+</body>
+</html>

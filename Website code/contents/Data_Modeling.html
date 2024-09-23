@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Modeling</title>
+    <link rel="stylesheet" href="Data_Modeling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+<!-----------------------------------------Main navbar----------------------------------------------->
+    <div class="container">
+        <div class="menu">
+            <ul> 
+                <li ><a href="../Home.html" class="passive">Home</a></li>
+                <li ><a href="Introduction.html" class="passive">Introduction</a></li>
+                <li ><a href="Data_Discovery.html" class="passive">Data Discovery</a></li>
+                <li ><a href="Data_Understanding.html" class="passive">Data Understanding</a></li>
+                <li ><a href="Data_Preparation.html" class="med">Data Preparation</a></li>
+                <li ><a href="EDA.html" class="med">Exploratory Data Analysis</a></li>
+                <li ><a href="#" class="med" style="color: #F8D040">Data Modeling</a></li>
+                <li ><a href="Evaluation.html" class="med">Model Evaluation</a></li>
+                <li ><a href="Comparison.html" class="active">Model Comparision</a></li>
+                <li ><a href="Conclusion.html" class="active">Conclusion</a></li>
+                <li ><a href="Improvement.html" class="active">Scope for Improvement</a></li>
+                <li ><a href="Bibliography.html" class="active">Bibliography</a></li>
+            </ul>
+        </div>
+        <div class="menu1">
+            <ul>
+                <li><a href="AboutUs.html" class="btn-aboutus"><span> About Us</span></a></li>            
+            </ul>
+        </div>
+    </div>
+<!-----------------------------------------------Definition------------------------------------------------------>
+<div class="block1">
+    <div class="pic">
+        <img src="svg/Left-hand.svg" width="300" height="450">
+        <img src="svg/Right-hand.svg" width="300" height="450">
+    </div>
+    <div class="define">    
+        <h2>Data Modeling</h2><br>
+        <h4>In Data Modeling, we will define and analyze data requirements needed to support the model.
+            This step would invlove the concepts and ML algorithms used for the purpose of analysing the model.
+        </h4>
+        <div style="display: flex;">
+            <img src="svg/Character-4.svg" width="200" height="320" style="margin-top: 20px;">
+            <img src="png/app_service_1.png" width="400" height="320" style="margin-top: 20px;">
+        </div>
+    </div>
+</div>
+<!--------------------------------------------------Details----------------------------------------------------------->
+<div class="head"><h1>We have used following Machine Learning Algorithms :</h1></div><br><br>
+<div class="head1"><h2> PLEASE CLICK ON THE BLACK BOX </h2></div>
+<!--------------------------------------------------Random Forest---------------------------------------------------->
+<h1 style="color: white; padding-left: 30px;">1. </h1>
+<div class="block2">
+    <input type="checkbox" id="checkbox-flip">
+    <input type="checkbox" id="checkbox-image1">
+    <input type="checkbox" id="checkbox-image2">
+    <div class="flip-algo">
+        <div class="content">
+            <label for="checkbox-flip"> Random Forest Algorithm</label>
+        </div>
+        <div class="image" id="image1">
+            <div class="front-image">
+                <h3> Random Forest Classifier Algorithm is a binary classifier that contains a number of decision trees on various subsets of the given dataset and takes the average to improve the predictive accuracy of that dataset. <br><br>
+                    Instead of relying on one decision tree, the random forest takes the prediction from each tree and based on the majority votes of predictions, it predicts the final output. <br><br>
+                    The greater number of trees in the forest leads to higher accuracy and prevents the problem of overfitting. <br><br>
+                    It is based on the concept of ensemble learning, which is a process of combining multiple classifiers to solve a complex problem and to improve the performance of the model.
+                </h3>
+                <label class="next" for="checkbox-image1"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-image">
+                <img src="Images/random-forest-.png">
+                <label class="prev" for="checkbox-image1"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>
+        <div class="image" id="image2">
+            <div class="front-image">
+                <p><span style="font-weight: bolder; font-size: 27px;">Parameters used for the algorithm are: </span><br><br>
+                    <span style="font-weight: bolder; font-size: 25px;">n_estimators : </span>(int, default = 100) The number of trees in the forest. <br><br>
+                    <span style="font-weight: bolder; font-size: 25px;">max_depth : </span>(int, default = None) The maximum depth of the tree. <br><br>
+                    <span style="font-weight: bolder; font-size: 25px;">random_state : </span>(int, RandomState instance or None, default = None) Controls both the randomness of the bootstrapping of the samples used when building trees. <br><br>
+                    <span style="font-weight: bolder; font-size: 25px;">max_samples : </span>(int or float, default = None)If bootstrap is True, the number of samples to draw from X to train each base estimator.
+                    </p>
+                <label class="next" for="checkbox-image2"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-image">
+                <img src="Images/random-forest-algorithm.png">
+                <label class="prev" for="checkbox-image2"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>        
+        <div class="back-cover"></div>
+    </div>
+</div>
+<!-------------------------------------------------------------Linear SVC--------------------------------------------------------------->
+<h1 style="color: white; padding-left: 30px;">2. </h1>
+<div class="block3">
+    <input type="checkbox" id="checkbox-flip1">
+    <input type="checkbox" id="checkbox-image3">
+    <input type="checkbox" id="checkbox-image4">
+    <div class="flip-algo1">
+        <div class="content1">
+            <label for="checkbox-flip1"> Linear Support Vector Classifier</label>
+        </div>
+        <div class="image1" id="image3">
+            <div class="front-image1">
+                <h3> Linear SVMs use a linear decision boundary to separate the data points of different classes. <br><br>
+                    When the data can be precisely linearly separated, linear SVMs are very suitable. <br><br>
+                    This means that a single straight line (in 2D) or a hyperplane (in higher dimensions) can entirely divide the data points into their respective classes. <br><br>
+                    A hyperplane that maximizes the margin between the classes is the decision boundary.
+                </h3>
+                <label class="next" for="checkbox-image3"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-image1">
+                <img src="Images/linear-svc.png">
+                <label class="prev" for="checkbox-image3"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>
+        <div class="image1" id="image4">
+            <div class="front-image1">
+                <p><span style="font-weight: bolder; font-size: 27px;">Parameters used for the algorithm are: </span><br><br>
+                    <span style="font-weight: bolder; font-size: 25px;">random_state : </span>(int, default=None) Controls the pseudo random number generation for shuffling the data for the dual coordinate descent (if dual=True). When dual=False the underlying implementation of LinearSVC is not random and random_state has no effect on the results. <br><br>
+                    <span style="font-weight: bolder; font-size: 25px;">max_iter : </span>(int, default=1000)The maximum number of iterations to be run.<br><br>
+                    </p>
+                <label class="next" for="checkbox-image4"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-image1">
+                <img src="Images/svc.png">
+                <label class="prev" for="checkbox-image4"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>        
+        <div class="back-cover1"></div>
+    </div>
+</div>
+<!---------------------------------------------------------------------------------------------------K-Neighbours------------------------------------------------------>
+<h1 style="color: white; padding-left: 30px;">3. </h1>
+<div class="block4">
+    <input type="checkbox" id="checkbox-flip2">
+    <input type="checkbox" id="checkbox-image5">
+    <input type="checkbox" id="checkbox-image6">
+    <div class="flip-algo2">
+        <div class="content2">
+            <label for="checkbox-flip2"> K-Nearest Neighbours</label>
+        </div>
+        <div class="image2" id="image5">
+            <div class="front-image2">
+                <h3> The K-nearest neighbor or K-NN algorithm basically creates an imaginary boundary to classify the data. <br><br>
+                    When new data points come in, the algorithm will try to predict that to the nearest of the boundary line. <br><br>
+                    Therefore, a larger k value means smoother curves of separation resulting in less complex models. Whereas, smaller k values tend to overfit the data and result in complex models. <br><br>
+                    The default is to use the Euclidean Distance, which is  the square root of the sum of the squared differences between two points.
+                </h3>
+                <label class="next" for="checkbox-image5"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-image2">
+                <img src="Images/K-neighbour.png">
+                <label class="prev" for="checkbox-image5"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>
+        <div class="image2" id="image6">
+            <div class="front-image2">
+                <p><span style="font-weight: bolder; font-size: 27px;">Parameters used for the algorithm are: </span><br><br>
+                    <span style="font-weight: bolder; font-size: 25px;">N_neighbors : </span>(int, default=5)Number of neighbors to use by default for k-neighbors queries.<br><br>
+                    <span style="font-weight: bolder; font-size: 25px;">Weights : </span>({'uniform', 'distance'}, callable or None, default='uniform')Weight function used in prediction. weights='distance' implies weight points by the inverse of their distance. In this case, closer neighbors of a query point will have a greater influence than neighbors which are further away.<br><br>
+                    </p>
+                <label class="next" for="checkbox-image6"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-image2">
+                <img src="Images/k-nearest-neighbors.webp">
+                <label class="prev" for="checkbox-image6"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>        
+        <div class="back-cover2"></div>
+    </div>
+</div>
+<!---------------------------------------------------------------------------Decision Tree-------------------------------------------------------------------------->
+<h1 style="color: white; padding-left: 30px;">4. </h1>
+<div class="block5">
+    <input type="checkbox" id="checkbox-flip3">
+    <input type="checkbox" id="checkbox-image7">
+    <input type="checkbox" id="checkbox-image8">
+    <div class="flip-algo3">
+        <div class="content3">
+            <label for="checkbox-flip3"> Decision Tree Algorithm</label>
+        </div>
+        <div class="image3" id="image7">
+            <div class="front-image3">
+                <h3> A decision tree is a flowchart-like tree structure where each internal node denotes the feature, branches denote the rules and the leaf nodes denote the result of the algorithm. <br><br>
+                    It is a versatile supervised machine-learning algorithm, which is used for both classification and regression problems. <br><br>
+                    The decision tree operates by analyzing the data set to predict its classification. <br><br>
+                    It commences from the tree's root node, where the algorithm views the value of the root attribute compared to the attribute of the record in the actual data set. 
+                </h3>
+                <label class="next" for="checkbox-image7"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-image3">
+                <img src="Images/Decision-tree.png">
+                <label class="prev" for="checkbox-image7"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>
+        <div class="image3" id="image8">
+            <div class="front-image3">
+                <p><span style="font-weight: bolder; font-size: 27px;">Parameters used for the algorithm are: </span><br><br>
+                    <span style="font-weight: bolder; font-size: 25px;">Min_impurity_decrease : </span>(float, default=0.0)
+                    A node will be split if this split induces a decrease of the impurity greater than or equal to this value. <br>
+                    The weighted impurity decrease equation is the following: <br><br>
+                    N_t / N * (impurity - N_t_R / N_t * right_impurity <br>
+                                        - N_t_L / N_t * left_impurity) <br>
+                    where N is the total number of samples, N_t is the number of samples at the current node, N_t_L is the number of samples in the left child, and N_t_R is the number of samples in the right child.
+                    </p>
+                <label class="next" for="checkbox-image8"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-image3">
+                <img src="Images/Decision-Tree.webp">
+                <label class="prev" for="checkbox-image8"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>        
+        <div class="back-cover3"></div>
+    </div>
+</div>
+<!----------------------------------------------------------------------------XGBoost---------------------------------------------------------------------------------------->
+<h1 style="color: white; padding-left: 30px;">5. </h1>
+<div class="block6">
+    <input type="checkbox" id="checkbox-flip4">
+    <input type="checkbox" id="checkbox-image9">
+    <input type="checkbox" id="checkbox-image10">
+    <div class="flip-algo4">
+        <div class="content4">
+            <label for="checkbox-flip4"> Extreme Gradient Boosting</label>
+        </div>
+        <div class="image4" id="image9">
+            <div class="front-image4">
+                <h3> XGBoost stands for “Extreme Gradient Boosting” and is an optimized distributed gradient boosting library designed for efficient and scalable training of machine learning models.  <br><br>
+                    It is an ensemble learning method that combines the predictions of multiple weak models to produce a stronger prediction. <br><br>
+                    In this algorithm, decision trees are created in sequential form. <br><br>
+                    Weights are assigned to all the independent variables which are then fed into the decision tree which predicts results. <br><br>
+                    The weight of variables predicted wrong by the tree is increased and these variables are then fed to the second decision tree.
+                </h3>
+                <label class="next" for="checkbox-image9"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-image4">
+                <img src="Images/XGBoost.png">
+                <label class="prev" for="checkbox-image9"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>
+        <div class="image4" id="image10">
+            <div class="front-image4">
+                <p><span style="font-weight: bolder; font-size: 27px;">Parameters used for the algorithm are: </span><br><br>
+                    <span style="font-weight: bolder; font-size: 25px;">n_estimators : </span>(int, default = 100) The number of trees in the forest. <br><br>
+                    <span style="font-weight: bolder; font-size: 25px;">max_depth : </span>(int, default = None) The maximum depth of the tree. <br><br>
+                    <span style="font-weight: bolder; font-size: 25px;">random_state : </span>(int, RandomState instance or None, default = None) Controls both the randomness of the bootstrapping of the samples used when building trees. <br><br>
+                    <span style="font-weight: bolder; font-size: 25px;">max_samples : </span>(int or float, default = None)If bootstrap is True, the number of samples to draw from X to train each base estimator.
+                    </p>
+                <label class="next" for="checkbox-image10"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-image4">
+                <img src="Images/Boosting.png">
+                <label class="prev" for="checkbox-image10"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>        
+        <div class="back-cover4"></div>
+    </div>
+</div>
+<div class="header">
+    <p class="main">Copyright © 2024. All Rights Reserved</p>
+</div>	
+</body>
+</html>

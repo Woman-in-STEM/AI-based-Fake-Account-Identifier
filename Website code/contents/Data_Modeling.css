@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #4A2F52;
+}
+/*----------------------------------------------------- Main Navbar-------------------------------------------------------- */
+.container{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    background:linear-gradient(45deg, #d82f87, #2a1b3d, #44318D, #501d18, #024553);
+}
+.menu ul{
+    display: inline-flex;
+    padding: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu ul li{
+    list-style-type: none;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+}
+.menu ul li::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: radial-gradient(#8904DC, #F72B9E, #F8D040);
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+.menu ul .active:hover{
+    color: #8904DC;
+}
+.menu ul .passive:hover{
+    color: #F8D040;
+}
+.menu ul .med:hover{
+    color: #F72B9E;
+}
+.menu ul li:hover::after{
+    opacity: 1;
+}
+.menu1{
+    margin-top: 20px;
+    padding-left: 50%;
+}
+.menu1 ul li{
+    list-style-type: none;
+    margin: 0 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-aboutus{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(#4A2F52, #4A2F52), radial-gradient(circle at top left, #8904DC, #F72B9E, #F8D040);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.btn-aboutus span{
+    display: block;
+    padding: 8px 22px;
+}
+/* --------------------------------------------Definition----------------------------------------- */
+.block1{
+    margin: 80px;
+    display: flex;
+    width: 90%;
+    height: 600px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+.pic{
+    padding: 20px;
+    display: flex;
+}
+.define{
+    padding: 20px;
+    color: black;
+    font-size: 27px;
+}
+/* --------------------------------------------------------------head---------------------------------------------------------- */
+.head{
+    text-align: center;
+}
+.head h1{
+    margin-top: 80px;
+    font-size: 40px;
+    color: white;
+}
+/* --------------------------------------------------------------head1---------------------------------------------------------- */
+.head1{
+    text-align: center;
+}
+.head1 {
+    margin-top: 20px;
+    font-size: 25px;
+    animation: smooth-blink 1.7s infinite;
+    transition: color 0.9s ease-in-out;
+    margin-left: 10px;
+    font-weight: bolder;
+}
+@keyframes smooth-blink{
+    0%, 100%{color: black;}
+    20%{color: red;}
+    75%{color: white;}
+}
+.head1 h2::before,.head1 h2::after{
+    content: "\2605   ";
+    font-size: 35px;
+    animation: star-blink 1.7s infinite;
+    transition: color 0.9s ease-in-out;
+}
+@keyframes star-blink{
+    0%, 100%{color: black;}
+    20%{color: red;}
+    75%{color: white;}
+}
+/*-------------------------------------------- flip-algo---------------------------------------- */
+.block2,.block3,.block4,.block5,.block6{
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+}
+.flip-algo ,.flip-algo1,.flip-algo2
+,.flip-algo3,.flip-algo4{
+	width: 600px;
+	height: 450px;
+	position: relative;
+	transition-duration: 1s;
+	perspective: 1500;
+}
+input {
+	display: none;
+}
+.content, .back-cover ,
+.content1, .back-cover1,
+.content2, .back-cover2,
+.content3, .back-cover3,
+.content4, .back-cover4 {
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	border-radius: 0 15px 15px 0;
+	box-shadow: 0 0 5px rgb(252, 250, 250);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform-origin: center left;
+}
+.content,.content1,.content2,.content3,.content4   {
+	position: absolute;
+	z-index: 4;
+	transition: transform 1s;
+}
+.content label ,.content1 label,
+.content2 label,.content3 label ,.content4 label{
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 170px;
+}
+.back-cover ,.back-cover1,.back-cover2,
+.back-cover3 ,.back-cover4{
+	position: relative;
+	z-index: -1;
+}
+.image ,.image1,.image2,
+.image3 ,.image4{
+	position: absolute;
+	background-color: white;
+	width: 590px;
+	height: 430px;
+	border-radius: 0 15px 15px 0;
+	margin-top: 10px;
+	transform-origin: left;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+	transition-duration: 1.5s;
+}
+.image img ,.image1 img,
+.image2 img,.image3 img ,.image4 img{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px 0 0 15px;
+}
+.front-image ,.front-image1,
+.front-image2,.front-image3 ,.front-image4{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	box-sizing: border-box;
+	padding: 1rem;
+}
+.back-image ,.back-image1,
+.back-image2,.back-image3 ,.back-image4{
+	transform: rotateY(180deg);
+	position: absolute;
+	width: 590px;
+	height: 100%;
+	backface-visibility: hidden;
+	z-index: 99;
+}
+.next, .prev {
+	position: absolute;
+	bottom: 1em;
+	cursor: pointer;
+}
+.next {
+	right: 1em;
+}
+.prev {
+	left: 1em;
+}
+#image1,#image3,#image5,#image7,#image9 {
+	z-index: 3;
+}
+#image2,#image4 ,#image6,#image8,#image10{
+	z-index: 2;
+}
+#checkbox-flip:checked ~ .flip-algo ,
+#checkbox-flip1:checked ~ .flip-algo1,
+#checkbox-flip2:checked ~ .flip-algo2,
+#checkbox-flip3:checked ~ .flip-algo3,
+#checkbox-flip4:checked ~ .flip-algo4{
+	transform: translateX(200px);
+}
+#checkbox-flip:checked ~ .flip-algo .content,
+#checkbox-flip1:checked ~ .flip-algo1 .content1,
+#checkbox-flip2:checked ~ .flip-algo2 .content2,
+#checkbox-flip3:checked ~ .flip-algo3 .content3,
+#checkbox-flip4:checked ~ .flip-algo4 .content4 {
+	transition: transform 1.5s, z-index 0.5s 0.5s;
+	transform: rotateY(-180deg);
+	z-index: 1;
+}
+#checkbox-flip:checked ~ .flip-algo .content label,
+#checkbox-flip1:checked ~ .flip-algo1 .content1 label,
+#checkbox-flip2:checked ~ .flip-algo2 .content2 label,
+#checkbox-flip3:checked ~ .flip-algo3 .content3 label,
+#checkbox-flip4:checked ~ .flip-algo4 .content4 label{
+    opacity: 0;
+}
+#checkbox-flip:checked ~ .flip-algo .image,
+#checkbox-flip1:checked ~ .flip-algo1 .image1,
+#checkbox-flip2:checked ~ .flip-algo2 .image2,
+#checkbox-flip3:checked ~ .flip-algo3 .image3,
+#checkbox-flip4:checked ~ .flip-algo4 .image4 {
+	box-shadow: 0 0 3px rgb(99, 98, 98);
+}
+#checkbox-image1:checked ~ .flip-algo #image1,
+#checkbox-image3:checked ~ .flip-algo1 #image3,
+#checkbox-image5:checked ~ .flip-algo2 #image5,
+#checkbox-image7:checked ~ .flip-algo3 #image7,
+#checkbox-image9:checked ~ .flip-algo4 #image9 {
+	transform: rotateY(-180deg);
+	z-index: 2;
+}
+#checkbox-image2:checked ~ .flip-algo #image2,
+#checkbox-image4:checked ~ .flip-algo1 #image4,
+#checkbox-image6:checked ~ .flip-algo2 #image6,
+#checkbox-image8:checked ~ .flip-algo3 #image8,
+#checkbox-image10:checked ~ .flip-algo4 #image10 {
+	transform: rotateY(-180deg);
+	z-index: 3;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    padding: 10px 20px;
+    color: white;
+    font-size: 26px;
+}

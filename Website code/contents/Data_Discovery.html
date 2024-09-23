@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Data_Discovery.css">
+    <title>Data Discovery</title>
+</head>
+<body>
+<!-----------------------------------------Main navbar----------------------------------------------->
+    <div class="container">
+        <div class="menu">
+            <ul> 
+                <li ><a href="../Home.html" class="passive">Home</a></li>
+                <li ><a href="Introduction.html" class="passive">Introduction</a></li>
+                <li ><a href="#" class="passive" style="color: #F8D040">Data Discovery</a></li>
+                <li ><a href="Data_Understanding.html" class="passive">Data Understanding</a></li>
+                <li ><a href="Data_Preparation.html" class="med">Data Preparation</a></li>
+                <li ><a href="EDA.html" class="med">Exploratory Data Analysis</a></li>
+                <li ><a href="Data_Modeling.html" class="med">Data Modeling</a></li>
+                <li ><a href="Evaluation.html" class="med">Model Evaluation</a></li>
+                <li ><a href="Comparison.html" class="active">Model Comparison</a></li>
+                <li ><a href="Conclusion.html" class="active">Conclusion</a></li>
+                <li ><a href="Improvement.html" class="active">Scope for Improvement</a></li>
+                <li ><a href="Bibliography.html" class="active">Bibliography</a></li>
+            </ul>
+        </div>
+        <div class="menu1">
+            <ul>
+                <li><a href="AboutUs.html" class="btn-aboutus"><span> About Us</span></a></li>            
+            </ul>
+        </div>
+    </div>
+<!-----------------------------------------------jpg & kaggle info------------------------------------------------>
+    <div class="container1">
+        <div class="content">
+            <div class="left">
+                <img src="png/data_discovery.jpg" width="600px" height="300px">
+                <div><br>
+                    <img src="svg/Character-3.svg" width="600px" height="550px">
+                </div>
+            </div>
+            <div class="right">
+                <div class="item">
+                    <h1>Data Discovery</h1><br>
+                    <h3>For our analysis we used "Instagram fake spammer genuine accounts" dataset.
+                         This dataset is available on Kaggle website. 
+                    </h3><br>
+                    <h4>There are two datasets i.e 'train.csv' which will be used to train the machine learning model over a subset of the original dataset and 'test.csv' 
+                        to test the quality & evaluate whether it can generalize well to the new or unseen data of our model.
+                    </h4><br>
+                    <a href="#" class="btn-aboutus"><span>Download Datasets</span></a>
+                </div>
+            </div>
+            <div class="kaggle">
+                <img src="png/kaggle.jpg" width="900px" height="300px">
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img src="svg/search.svg" width="400px" height="600px">
+            </div>        
+        </div>
+    </div>
+<!---------------------------------------------------Training & Testing ----------------------------------------------------------->
+<div class="head"><h1>Importing Datasets</h1></div>
+<div class="container2">
+    <div class="card">
+        <div class="card-detail">
+            <h3>Train Dataset</h3>
+            <img src="png/train.png" width="500" height="250"> <br>          
+            It is highly responsible for the model's accuracy and prediction ability.
+            It means that the better the quality of the training data, the better will be the performance of the model. 
+            The training data lets the ML algorithms learn how to make predictions for the given task.   
+            Training data is approximately more than or equal to 60% of the total data for an ML project. <br>
+            <button class="btn-aboutus"><span>Train Dataset Output</span></button><br>       
+        </div>
+        <div class="card-header">
+            <img src="Images/train_op.png" width="670" height="600">
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-detail">
+            <h3>Test Dataset</h3>
+            <img src="png/test.png" width="500" height="250"><br>
+            After training the dataset, it's time to test the model with test dataset. 
+            This dataset evaluates the performance of the model & ensures that it can generalize well with the unseen dataset. 
+            This is a well-organized dataset that contains data for each type of scenario model would be facing in the real world. 
+            Test dataset is approximately 20% of the total original data for an ML project. <br>
+            <a class="btn-aboutus"><span>Test Dataset Output</span></a><br>
+        </div>
+        <div class="card-header">
+            <img src="Images/test_op.png" width="670" height="600">
+        </div>
+    </div>
+</div>
+<div class="header">
+    <p class="main">Copyright © 2024. All Rights Reserved</p>
+</div>
+</body>
+</html>

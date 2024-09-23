@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #4A2F52;
+}
+/*----------------------------------------------------- Main Navbar-------------------------------------------------------- */
+.container{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    background:linear-gradient(45deg, #d82f87, #2a1b3d, #44318D, #501d18, #024553);
+}
+.menu ul{
+    display: inline-flex;
+    padding: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu ul li{
+    list-style-type: none;
+    margin: 0 6px;
+    cursor: pointer;
+    font-size: 15px;
+    position: relative;
+}
+.menu ul li::after{
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: radial-gradient(#8904DC, #F72B9E, #F8D040);
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+.menu ul .active:hover{
+    color: #8904DC;
+}
+.menu ul .passive:hover{
+    color: #F8D040;
+}
+.menu ul .med:hover{
+    color: #F72B9E;
+}
+.menu ul li:hover::after{
+    opacity: 1;
+}
+.menu1{
+    margin-top: 20px;
+    padding-left: 50%;
+}
+.menu1 ul li{
+    list-style-type: none;
+    margin: 0 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-aboutus{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(#4A2F52, #4A2F52), radial-gradient(circle at top left, #8904DC, #F72B9E, #F8D040);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.btn-aboutus span{
+    display: block;
+    padding: 8px 22px;
+}
+/*------------------------------------------------image & text-------------------------------------------------------------*/
+.mssg{
+    display: flex;
+    justify-content: space-between;
+}
+.mssg h1{
+    padding-left: 40px;
+    font-size: 30px;
+    margin-top: 100px;
+    color: white;
+}
+/* -------------------------------------------steps------------------------------------------------------------------------ */
+.container1{
+    display: block;
+    margin: 20px;
+}
+.top{
+    display: flex;
+}
+.text{
+    padding-left: 30px;
+    color: white;
+    margin-top: 150px;
+    font-size: 22px;
+}
+.down{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/* --------------------------------------------------------------head---------------------------------------------------------- */
+.head{
+    text-align: center;
+}
+.head h1{
+    margin: 30px;
+    font-size: 30px;
+    color: white;
+}
+/* ----------------------------------------------compare----------------------------------------------------------------------- */
+.container2{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.para{
+    margin-top: 100px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.8);
+    width: 600px;
+    height: 270px;
+    color: white;
+}
+.para h2{
+    text-align: center;
+    font-size: 35px;
+}
+.para h3{
+    text-align: center;
+    font-size: 20px;
+}
+.photo{
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.8);
+    width: 740px;
+    height: 480px;
+}
+.para:hover ,
+.photo:hover{
+    box-shadow: 0 0 30px black
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    padding: 10px 20px;
+    color: white;
+    font-size: 26px;
+}

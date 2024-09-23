@@ -1,0 +1,173 @@
+<html>
+<head>
+	<link rel="stylesheet" href="EDA.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>EDA</title>
+<body style="background-color: black;color:white;">
+	<div class="menu">
+            <ul> 
+                <li ><a href="../Home.html" class="passive">Home</a></li>
+                <li ><a href="Introduction.html" class="passive">Introduction</a></li>
+                <li ><a href="Data_Discovery.html" class="passive">Data Discovery</a></li>
+                <li ><a href="Data_Understanding.html" class="passive">Data Understanding</a></li>
+                <li ><a href="Data_Preparation.html" class="med">Data Preparation</a></li>
+                <li ><a href="#" class="med" style="color: #F8D040">Exploratory Data Analysis</a></li>
+                <li ><a href="Data_Modeling.html" class="med">Data Modeling</a></li>
+                <li ><a href="Evaluation.html" class="med">Model Evaluation</a></li>
+                <li ><a href="Comparison.html" class="active">Model Comparison</a></li>
+                <li ><a href="Conclusion.html" class="active">Conclusion</a></li>
+                <li ><a href="Improvement.html" class="active">Scope for Improvement</a></li>
+                <li ><a href="Bibliography.html" class="active">Bibliography</a></li>
+            </ul>
+    </div>
+    <div class="menu1">
+            <ul>
+                <li><a href="AboutUs.html" class="btn-aboutus"><span> About Us</span></a></li>            
+            </ul><br><br>
+        </div>
+    <h1><center style="color:lightsalmon;margin-top: 15px;font-family: fantasy;">EXPLORATORY DATA ANALYSIS</center></h1><hr style="border-width: 5px; color:limegreen;"><br>
+    
+    <img src="svg/eda 1.svg" width="600px" height="600px" style="margin-left: 300px;">
+    <div class="container">
+        <div class="row">
+                <h3>Univariate Analysis</h3>
+            <div class="col-6">
+                <br>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5>Bar Graph</h5>
+                            <img src="Images/barg.png" style="width:350px;height:350px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h6>Interpretation</h6>
+                            <p>The two graphs represent the count of fake accounts, the left side (light pink) graph indicates fake account count for train dataset. Hence, in the training dataset, the number of fake accounts and genuine accounts are the same. On the right side (light green) graph shows fake account count for test dataset. Here, the number of real accounts is slightly lesser than that of fake accounts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <br>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5>Pie Chart</h5>
+                            <img src="Images/pie.png" style="width:350px;height:350px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h6>Interpretation</h6>
+                            <p>Above diagram shows the distribution of word lengths in the fullname words column of the train dataframe. The pie chart has three slices, corresponding to the possible word lengths: 1, 2, and 3. The percentage annotation shows the proportion of each word length in the column. For example, the slice for word length 1 has 50%, which means that half of the total accounts in the sample have only one word in their full name.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><hr style="border-width: 5px; color:limegreen;"><br><br>
+        <div class="row">
+                <h3>Bivariate Analysis</h3>
+            <div class="col-6">
+                <br>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5>Box Plot</h5>
+                            <img src="Images/box.png" style="width:350px;height:350px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h6>Interpretation</h6>
+                            <p>The above box plot shows the distribution in description length of an account against the type of account, namely, real (0) or fake (1). For real accounts, the values occur roughly in the range 0-27, with the median being approximately 18. On the other hand, fake accounts in the given sample do not have a description at all, making its range and median 0. There are also no outliers in the given sample, for both datasets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <br>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5>Joint Plot</h5>
+                            <img src="Images/joint.png" style="width:350px;height:350px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h6>Interpretation</h6>
+                            <p>Fake accounts have less or no posts, they just have the fake profile pic posted. They don't post anything, they track the information and posts from other users. Fake accounts post advertisements like lottery, money debited in your bank account, investment etc. On the other hand, genuine accounts users don't post anything related to such advertisements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><hr style="border-width: 5px; color:limegreen;"><br><br>
+        <div class="row">
+                <h3>Trivariate Analysis</h3>
+            <div class="col-6">
+                <br>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5>Scatter Plot</h5>
+                            <img src="Images/scatter.png" style="width:350px;height:350px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h6>Interpretation</h6>
+                            <p>Fake accounts tend to have a low number of followers and follow very few accounts. On the other hand, real accounts have a relatively larger amount of followers and followings. Fake accounts usually have less than 50 followers and approximately 200 followings, with one outlier having higher than 500 follows. In contrast, genuine accounts followings are between 0 and 1000, with an outlier whose followings are more than 4000, implying an influencer account.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <br>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5>Axes Plot</h5>
+                            <img src="Images/axes.png" style="width:350px;height:350px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h6>Interpretation</h6>
+                            <p>From the graph, it can be seen that the statistics of an account being private and having a profile picture is the same. Both the parameters appear more in real accounts instead of fake. This suggests that spam accounts are generally public, without a profile picture. Hence, the data hidden by the user plays a factor into determining whether the account is legitimate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><hr style="border-width: 5px; color:limegreen;"><br><br>
+        <div class="row">
+                <h3>Multivariate Analysis</h3>
+            <div class="col-6">
+                <br>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5>Heat Map</h5>
+                            <img src="Images/heat.png" style="width:350px;height:350px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h6>Interpretation</h6>
+                            <p>This shows the correlation of different variables by various colors. The light red color shows a slight positive correlation between the attributes in the corresponding row and column. Similarly, dark red shows a high correlation while light blue and dark blue colors show a negative slight and high correlation respectively. Hence, fake has the highest correlation with itself. It has the highest negative correlation with profile pic attribute and highest positive one with length of username.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <br>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h5>Pair Plot</h5>
+                            <img src="Images/pair.png" style="width:350px;height:350px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h6>Interpretation</h6>
+                            <p>The default pairplot shows scatter plots between variables on the upper and lower triangle and histograms along the diagonal. It plots multiple pairwise bivariate distributions in the training dataset.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><hr style="border-width: 5px; color:limegreen;"><br><br>
+    </div>
+	<div class="header">
+		<p class="main">Copyright © 2024. All Rights Reserved</p>
+	</div>	
+</body>
+</html>
