@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
 $username = "root";
-$password = "prout";
+$password = "dbuser";
 $dbname = "Fake";
 ?>
