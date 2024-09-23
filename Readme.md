@@ -1,8 +1,8 @@
 🖥️Technologies used in the project🖥️:
 
 Operating System 💻:
-![Windows]
-![Linux]
+Windows
+Linux
 
 Front End 📱:
 
@@ -28,10 +28,9 @@ Database 🗃️:
  )
 
 Connect with us 🔗💕:
+[@Sanskruti Joshi]()
+[![Github](https://img.shields.io/badge/github-100000?style=for-the-badge&logo=GitHub&logoColor=white&labelColor=black&color=black')](https://github.com/Woman-in-STEM)
 
 [@Priyanka Rout]()
 [![Github](https://img.shields.io/badge/github-100000?style=for-the-badge&logo=GitHub&logoColor=white&labelColor=black&color=black')](https://github.com/PRout1911)
-
-[@Sanskruti Joshi]()
-[![Github](https://img.shields.io/badge/github-100000?style=for-the-badge&logo=GitHub&logoColor=white&labelColor=black&color=black')](https://github.com/Woman-in-STEM)
 
