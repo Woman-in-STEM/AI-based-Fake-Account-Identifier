@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+<script>
+window.onload = function() {
+    var response = prompt("Welcome! Please register or login.");
+    if (response === "register") {
+        // Redirect user to the registration page
+        window.location.href = "src/register.php";
+    } else if (response === "login") {
+        // Redirect user to the login page
+        window.location.href = "src/login.php";
+    } else {
+        // If the user doesn't enter 'register' or 'login'
+        alert("Invalid response. Please try again.");
+    }
+};
+</script>
+</head>
+<body>
+</body>
+</html>
